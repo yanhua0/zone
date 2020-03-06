@@ -1,0 +1,154 @@
+.Input_Box {
+    overflow: hidden;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+
+
+
+.imgBtn {
+    float: left;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 0 -13px;
+    height: 18px;
+    width: 20px;
+    cursor: pointer;
+    color:red;
+    font-size: 13px;
+}
+
+.imgBtn:active {
+    margin-top: 9px;
+}
+
+.imgBtn:hover {
+    background-position: 0 -31px
+}
+
+.postBtn {
+    float: right;
+    font: 13px "微软雅黑", Arial, Helvetica, sans-serif;
+    color: #808080;
+    padding: 9px 20px 7px 20px;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    -moz-border-radius: 0 0 5px 0;
+    -webkit-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+.postBtn:hover {
+    color: #333;
+    background-color: #efefef;
+}
+
+.postBtn:active {
+    padding: 10px 20px 6px 20px;
+}
+
+.faceDiv {
+    width: 100%;
+    border: 1px solid gray;
+    position: relative;
+    display: none;
+    background-color: #fff;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    z-index:5;
+}
+
+.faceDiv> .emoji_container >section >._img img {
+    border: 1px solid #ccc;
+    float: left;
+    max-width: 48px;
+    max-height: 48px;
+    margin-left: -1px;
+    margin-top: -1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.faceDiv>img:hover {
+    background-color: #efefef;
+}
+
+.faceDiv>img:active {
+    padding: 4px 3px 2px 3px;
+}
+
+.emoji_tab {
+    position: relative;
+    border-top: 1px solid gray;
+    height: 2em;
+    line-height: 2em;
+    white-space: nowrap;
+    overflow-x: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.emoji_tab a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1em;
+    padding: .2em .5em;
+    background-color: gray;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 5px;
+    margin: 0 .2em;
+    color:#000;
+}
+.emoji_tab a:hover{
+    color: #fff;
+}
+.emoji_container {
+    height: 150px;
+    padding: .5em;
+    overflow: auto;
+}
+
+.emoji_container section {
+    display: none;
+}
+
+
+
+.active {
+    background-color: black;
+    color: white;
+}
+#code{
+    width:40%;
+    min-width:450px;
+    height:450px;
+    background-color:rgba(0, 0, 0, 0.3);
+    position:fixed;
+    left:30%;
+    top:20%;
+    border-radius: 10px;
+    font-size:16px;
+    line-height:22px;
+    font-weitht:bold;
+}
+#author{
+    position: fixed;
+    bottom: 10px;
+    left: 48%;
+}
+#author a{
+    text-decoration: none;}
+.key{
+    color:orange;
+    font-family:'';
+}
+.comment{
+    color:#e6e6e6;
+    font-weight: 800;
+}

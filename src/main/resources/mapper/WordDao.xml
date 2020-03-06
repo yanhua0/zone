@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--为DAO接口提供sql语句方法-->
+<mapper namespace="org.zone.dao.WordDao">
+    <select id="queryAll" resultType="word">
+        select
+        *from
+        word where username=#{username} order by create_time DESC
+   </select>
+    <insert id="insert">
+        insert into word(username,word)
+        values(#{username},#{word})
+    </insert>
+    <delete id="delete">
+        delete from word where id=#{id}
+    </delete>
+    <select id="count" resultType="java.lang.Integer">
+        select count(*) from word
+    </select>
+    <select id="queryById" resultType="word">
+        select *from word where id=#{id}
+    </select>
+</mapper>
